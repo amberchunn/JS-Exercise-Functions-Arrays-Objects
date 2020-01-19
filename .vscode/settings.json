@@ -1,3 +1,16 @@
 {
-  "standard.enable": false
+  "standard.enable": false,
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "plaintext",
+    "markdown",
+    "latex",
+    "html",
+    "jade",
+    "pug",
+    "css",
+    "php"
+  ]
 }

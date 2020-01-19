@@ -179,9 +179,7 @@ function getLastCarInfo(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoById(inventory, id) {
-  const carId = inventory[id];
- //console.log(carId.car_make);
- //console.log(carId.car_model);
+  const carId = inventory[id-1];
   return `This is a ${carId.car_make} ${carId.car_model}`;
 }
 
@@ -242,7 +240,7 @@ for (let i=0; i < inventory.length; i++) {
 function getOlderCars(inventory, maxYr) {
   let carsList =[];
   for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_year < maxYr) {
+    if (inventory[i].car_year <= maxYr) {
       carsList.push(inventory[i]);
     }
   }
@@ -305,8 +303,13 @@ const argTimesTwo = num => num * 2; // code here!
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(odometer) {
+  // const odo = {};
+  // odo.odometer;
+  // odo.drive(dist) {
+  //   dist + odo;
+  // }
+  // return newOdometer;
 }
 
 /// ////// END OF CHALLENGE /////////
